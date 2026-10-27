@@ -60,7 +60,6 @@ OR_MODELS_BY_PROVIDER = {
     "NVIDIA":
         [
             "nvidia/nemotron-3-ultra-550b-a55b:free",
-            "nvidia/nemotron-3-super-120b-a12b:free",
             "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
             "nvidia/nemotron-3.5-content-safety:free",
         ],
@@ -70,12 +69,12 @@ OR_MODELS_BY_PROVIDER = {
         ["cohere/north-mini-code:free"],
     "Auto-added":
         [
-            "dots-studio/dots-3-note-preview:free",
-            "liquid/lfm-2.5-2.6b:free",
-            "nvidia/nemotron-3.5-lightning:free",
-            "nvidia/nemotron-3.5-super-vl:free",
-            "openrouter/free",
-            "recursive/flint-v1.0:free",
+            "google/gemma-4-31b-it:free",
+            "poolside/laguna-s-2.1:free",
+            "poolside/laguna-xs-2.1:free",
+            "thinkingmachines/inkling-small:free",
+            "thinkingmachines/inkling:free",
+            "xingchen-agi/xing4.0-29b-a4b:free",
         ],
 }
 OPENROUTER_FREE_MODELS = [m for ms in OR_MODELS_BY_PROVIDER.values() for m in ms]
@@ -161,7 +160,6 @@ ALL_MODELS: list[tuple[str, str]] = (
 # ~half Groq so neither serializes on the other.
 GROUP1_MODELS: list[tuple[str, str]] = [
     ("nvidia/nemotron-3-ultra-550b-a55b:free",   "openrouter"),
-    ("nvidia/nemotron-3-super-120b-a12b:free",   "openrouter"),
     ("nvidia/nemotron-3.5-content-safety:free",  "openrouter"),
     ("google/gemma-4-26b-a4b-it:free",           "openrouter"),
     ("openai/gpt-oss-120b",                      "groq"),
@@ -379,6 +377,9 @@ GROUP1_MODELS: list[tuple[str, str]] = [
     ("dots-studio/dots-3-note-preview:free",     "openrouter"),
     ("nvidia/nemotron-3.5-lightning:free",       "openrouter"),
     ("openrouter/free",                          "openrouter"),
+    ("google/gemma-4-31b-it:free",               "openrouter"),
+    ("poolside/laguna-xs-2.1:free",              "openrouter"),
+    ("thinkingmachines/inkling:free",            "openrouter"),
 ]
 
 GROUP2_MODELS: list[tuple[str, str]] = [
@@ -551,6 +552,9 @@ GROUP2_MODELS: list[tuple[str, str]] = [
     ("liquid/lfm-2.5-2.6b:free",                            "openrouter"),
     ("nvidia/nemotron-3.5-super-vl:free",                   "openrouter"),
     ("recursive/flint-v1.0:free",                           "openrouter"),
+    ("poolside/laguna-s-2.1:free",                          "openrouter"),
+    ("thinkingmachines/inkling-small:free",                 "openrouter"),
+    ("xingchen-agi/xing4.0-29b-a4b:free",                   "openrouter"),
 ]
 
 
