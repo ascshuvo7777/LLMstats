@@ -69,12 +69,12 @@ OR_MODELS_BY_PROVIDER = {
         ["cohere/north-mini-code:free"],
     "Auto-added":
         [
-            "dots-studio/dots-3-note-preview:free",
-            "liquid/lfm-2.5-2.6b:free",
-            "nvidia/nemotron-3.5-lightning:free",
-            "nvidia/nemotron-3.5-super-vl:free",
-            "openrouter/free",
-            "recursive/flint-v1.0:free",
+            "google/gemma-4-31b-it:free",
+            "poolside/laguna-s-2.1:free",
+            "poolside/laguna-xs-2.1:free",
+            "thinkingmachines/inkling-small:free",
+            "thinkingmachines/inkling:free",
+            "xingchen-agi/xing4.0-29b-a4b:free",
         ],
 }
 OPENROUTER_FREE_MODELS = [m for ms in OR_MODELS_BY_PROVIDER.values() for m in ms]
@@ -392,6 +392,9 @@ GROUP1_MODELS: list[tuple[str, str]] = [
     ("mistral-large-4",                          "mistral"),
     ("nvidia/nemotron-3.5-lightning:free",       "openrouter"),
     ("openrouter/free",                          "openrouter"),
+    ("google/gemma-4-31b-it:free",               "openrouter"),
+    ("poolside/laguna-xs-2.1:free",              "openrouter"),
+    ("thinkingmachines/inkling:free",            "openrouter"),
 ]
 
 GROUP2_MODELS: list[tuple[str, str]] = [
@@ -577,6 +580,9 @@ GROUP2_MODELS: list[tuple[str, str]] = [
     ("mistral-large-4-0",                                   "mistral"),
     ("nvidia/nemotron-3.5-super-vl:free",                   "openrouter"),
     ("recursive/flint-v1.0:free",                           "openrouter"),
+    ("poolside/laguna-s-2.1:free",                          "openrouter"),
+    ("thinkingmachines/inkling-small:free",                 "openrouter"),
+    ("xingchen-agi/xing4.0-29b-a4b:free",                   "openrouter"),
 ]
 
 
