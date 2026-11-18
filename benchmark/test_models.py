@@ -68,14 +68,9 @@ OR_MODELS_BY_PROVIDER = {
         ["cohere/north-mini-code:free"],
     "Auto-added":
         [
-            "baidu/ernie-5.5-flash-preview:free",
-            "dots-studio/dots-3-note-preview:free",
-            "liquid/lfm-3-1.7b:free",
-            "nvidia/nemotron-3.5-lightning:free",
-            "nvidia/nemotron-3.5-super-vl:free",
-            "openrouter/free",
-            "particle-ai/particle-1:free",
-            "recursive/flint-v1.0:free",
+            "google/gemma-4-31b-it:free",
+            "inclusionai/ling-3.2-flash:free",
+            "thinkingmachines/inkling-2-small:free",
         ],
 }
 OPENROUTER_FREE_MODELS = [m for ms in OR_MODELS_BY_PROVIDER.values() for m in ms]
@@ -130,8 +125,6 @@ MISTRAL_MODELS = [
     "magistral-small-latest",
     "codestral-latest",
     "codestral-2508",
-    "labs-leanstral-1-5",
-    "labs-leanstral-1-5-1",
     "ministral-14b-2512",
     "ministral-14b-latest",
     "ministral-3b-2512",
@@ -172,7 +165,6 @@ GROUP1_MODELS: list[tuple[str, str]] = [
     ("canopylabs/orpheus-arabic-saudi",         "groq"),
     ("codestral-2508",                          "mistral"),
     ("inclusionai/ling-3.0-flash:free",         "openrouter"),
-    ("labs-leanstral-1-5-1",                    "mistral"),
     ("ministral-14b-2512",                      "mistral"),
     ("ministral-3b-2512",                       "mistral"),
     ("mistral-code-latest",                     "mistral"),
@@ -399,6 +391,8 @@ GROUP1_MODELS: list[tuple[str, str]] = [
     ("liquid/lfm-3-1.7b:free",                  "openrouter"),
     ("nvidia/nemotron-3.5-super-vl:free",       "openrouter"),
     ("particle-ai/particle-1:free",             "openrouter"),
+    ("google/gemma-4-31b-it:free",              "openrouter"),
+    ("thinkingmachines/inkling-2-small:free",   "openrouter"),
 ]
 
 GROUP2_MODELS: list[tuple[str, str]] = [
@@ -412,7 +406,6 @@ GROUP2_MODELS: list[tuple[str, str]] = [
     ("inclusionai/ling-3.0-flash:free",                     "openrouter"),
     ("canopylabs/orpheus-v1-english",                       "groq"),
     ("google/gemma-4-31b-it:free",                          "openrouter"),
-    ("labs-leanstral-1-5",                                  "mistral"),
     ("ministral-14b-latest",                                "mistral"),
     ("ministral-8b-2512",                                   "mistral"),
     ("mistral-code-fim-latest",                             "mistral"),
@@ -582,6 +575,7 @@ GROUP2_MODELS: list[tuple[str, str]] = [
     ("nvidia/nemotron-3.5-lightning:free",                  "openrouter"),
     ("openrouter/free",                                     "openrouter"),
     ("recursive/flint-v1.0:free",                           "openrouter"),
+    ("inclusionai/ling-3.2-flash:free",                     "openrouter"),
 ]
 
 
